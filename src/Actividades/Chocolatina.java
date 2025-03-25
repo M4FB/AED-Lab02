@@ -17,4 +17,29 @@ public class Chocolatina {
     public String toString() {
         return "Chocolatina{" + "marca='" + marca + '\'' + '}';
     }
+
+    @Override
+
+    public boolean equals(Object obj) {
+
+        if (this == obj) return true;
+
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Chocolatina that = (Chocolatina) obj;
+
+        return marca.equals(that.marca);
+
+    }
+
+
+    @Override
+
+    public int hashCode() {
+
+        return marca.hashCode();
+
+    }
+
 }
+
