@@ -12,4 +12,9 @@ public class Chocolatina {
     public void setMarca(String marca){
         this.marca = marca;
     }
+
+    @Override
+    public String toString() {
+        return "Chocolatina{" + "marca='" + marca + '\'' + '}';
+    }
 }
