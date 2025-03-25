@@ -24,9 +24,16 @@ public class DemoMetodoGenerico {
             System.out.println("nums es igual a num3");
         if (igualArrays(nums, nums4))
             System.out.println("nums es igual a nums4");
-        // Crea un array de double
-        Double[] dvals ={1.1,2.2,3.3,4.4,5.5};
-        if(igualArrays(nums,dvals))
-            System.out.println("nums es igual a dvals");
+        /*
+         * Respecto a la actividad 7,el codigo no compila,
+         *al definir igualArrays, pusimos la restriccion T extends Comparable <T>
+         *por lo que ambos deberian de contener elementos del mismo tipo T que implemente comparable <T>
+         * */
+
+
+//AA        // Crea un array de double
+//BB        Double[] dvals ={1.1,2.2,3.3,4.4,5.5};
+//CC        if(igualArrays(nums,dvals))
+//DD            System.out.println("nums es igual a dvals");
     }
 }
