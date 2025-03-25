@@ -4,7 +4,7 @@ import Actividades.Chocolatina;
 import Actividades.Golosina;
 
 class TestGen {
-    // Método genérico para verificar si un elemento existe en el array
+    // Metodo genérico para verificar si un elemento existe en el array
     public static <T extends Comparable<T>> boolean exist(T[] array, T elementoABuscar) {
         // Recorre cada item en el array, si es igual al elemento a buscar, entonces retorna true
         for (T item : array) {

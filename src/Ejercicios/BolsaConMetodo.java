@@ -2,10 +2,11 @@ package Ejercicios;
 
 import Actividades.Chocolatina;
 import Actividades.Golosina;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 
+
+//Nueva implementacion de la clase bolsa, la mayor diferencia es la inclusion del metodo para mostrar el contenido
 public class BolsaConMetodo<T> implements Iterable<T> {
     private ArrayList<T> lista = new ArrayList<>();
     private int tope;

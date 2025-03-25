@@ -33,23 +33,15 @@ public class Golosina {
     @Override
 
     public boolean equals(Object obj) {
-
-        if (this == obj) return true;
-
-        if (obj == null || getClass() != obj.getClass()) return false;
-
-        Golosina golosina = (Golosina) obj;
-
+        if (this == obj){ // primera comparacion, ve si los dos objetos son el mismo, ej comparar chocolate1 con chocolate 1
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()){ //segunda comparacion, si el objeto es null, o es de otra clase
+            return false;
+        }
+        Golosina golosina = (Golosina) obj; //convierte el obj a tipo golosina para efectuar la comparacion
+        //si el peso de la golosina y su nombre es igual, entonces son iguales
         return Double.compare(golosina.peso, peso) == 0 && nombre.equals(golosina.nombre);
-
-    }
-
-
-    @Override
-
-    public int hashCode() {
-
-        return 31 * nombre.hashCode() + Double.hashCode(peso);
 
     }
 }

@@ -3,6 +3,8 @@ package Ejercicios;
 import java.util.ArrayList;
 import java.util.List;
 
+//cajaj que acepta cualquier elemento, es una implementacion basica, almacena tanto el color como un arraylist de elementos
+//segun se le indique
 public class CajCaja<T> {
     private String color;
     private List<T> contenido;
