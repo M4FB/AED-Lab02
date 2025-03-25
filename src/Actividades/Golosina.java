@@ -1,3 +1,5 @@
+package Actividades;
+
 public class Golosina {
     private String nombre;
     private double peso;

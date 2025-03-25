@@ -1,3 +1,5 @@
+package Actividades;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -11,7 +13,7 @@ public class Bolsa<T> implements Iterable<T> {
     }
 
     public void add(T objeto){
-        if (lista.size() >= tope){
+        if (lista.size() < tope){
             lista.add(objeto);
         } else {
             throw new RuntimeException("No Caben Más");

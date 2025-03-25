@@ -1,3 +1,5 @@
+package Actividades;
+
 public class Chocolatina {
     private String marca;
 

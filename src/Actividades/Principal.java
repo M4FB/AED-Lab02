@@ -1,3 +1,5 @@
+package Actividades;
+
 public class Principal {
     public static void main(String[] args) {
         Bolsa<Chocolatina> bolsaCho = new Bolsa<Chocolatina>(3);
